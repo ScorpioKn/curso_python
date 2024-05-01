@@ -13,4 +13,13 @@ if true:
     print("es verdad")
 ```
     ##ciclos
-    
+    son los controles de flujo que repiten codigo y su su sintaxis es la siguiente
+    > para FOR:
+
+    ```python
+    # este codigo imprime los numeros
+    #del 1 al 10
+    for n in range(1,11):
+        print (n)
+        ```
+        
