@@ -1,0 +1,16 @@
+# Programa para calcular la suma de números introducidos por el usuario
+
+# Solicitar al usuario la cantidad de números a introducir
+cantidad_numeros = int(input("Ingrese cuántos números va a introducir: "))
+
+# Inicializar la variable para almacenar la suma
+suma = 0
+
+# Pedir y sumar los números introducidos
+while cantidad_numeros > 0:
+    numero = float(input("Ingrese un número: "))
+    suma += numero
+    cantidad_numeros -= 1
+
+# Mostrar la suma de los números introducidos
+print(f"La suma de los números introducidos es: {suma}")

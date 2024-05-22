@@ -1,0 +1,17 @@
+# Programa para verificar si los números introducidos son mayores que el anterior
+
+# Solicitar al usuario la cantidad de números a introducir
+cantidad_numeros = int(input("Ingrese cuántos números va a introducir: "))
+
+# Inicializar la variable para almacenar el número anterior
+anterior = None
+
+# Pedir y verificar los números introducidos
+while cantidad_numeros > 0:
+    numero = float(input("Ingrese un número: "))
+    
+    if anterior is not None and numero <= anterior:
+        print("El número introducido no es mayor que el anterior.")
+    
+    anterior = numero
+    cantidad_numeros -= 1

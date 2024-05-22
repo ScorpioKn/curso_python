@@ -1,0 +1,19 @@
+# Programa para contar cuántos números negativos se han introducido
+
+# Solicitar al usuario la cantidad de números a introducir
+cantidad_numeros = int(input("Ingrese cuántos números va a introducir: "))
+
+# Inicializar el contador de números negativos
+contador_negativos = 0
+
+# Pedir los números e identificar los negativos
+while cantidad_numeros > 0:
+    numero = float(input("Ingrese un número: "))
+    
+    if numero < 0:
+        contador_negativos += 1
+    
+    cantidad_numeros -= 1
+
+# Mostrar la cantidad de números negativos introducidos
+print(f"Ha introducido {contador_negativos} número(s) negativo(s).")

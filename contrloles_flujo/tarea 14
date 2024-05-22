@@ -1,0 +1,23 @@
+# Programa para simular el desbloqueo de la pantalla de un móvil con un PIN secreto
+
+# PIN secreto para desbloquear la pantalla
+PIN_SECRETO = "1234"
+
+# Inicializar el contador de intentos
+intentos = 3
+
+# Simular el proceso de desbloqueo
+while intentos > 0:
+    # Solicitar al usuario que ingrese el PIN
+    pin_ingresado = input("Ingrese el PIN para desbloquear la pantalla: ")
+    
+    # Verificar si el PIN ingresado es correcto
+    if pin_ingresado == PIN_SECRETO:
+        print("Login correcto.")
+        break
+    else:
+        intentos -= 1
+        if intentos > 0:
+            print(f"PIN incorrecto. Le quedan {intentos} intento(s).")
+        else:
+            print("Llamando a la policía.")

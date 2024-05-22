@@ -1,0 +1,14 @@
+# Programa para solicitar y verificar una contraseña
+
+# Solicitar la primera contraseña al usuario
+contrasena1 = input("Ingrese la contraseña: ")
+
+# Solicitar la segunda contraseña y verificar si coincide con la primera
+while True:
+    contrasena2 = input("Confirme la contraseña: ")
+    
+    if contrasena2 == contrasena1:
+        print("Las contraseñas coinciden. Contraseña establecida con éxito.")
+        break
+    else:
+        print("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.")

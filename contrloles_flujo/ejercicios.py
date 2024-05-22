@@ -13,4 +13,4 @@ imprimir_triangulo_vocales()
 
 for i,letra in enumerate("aeiou"):
     print(letra * (i + 1))
-    
+    c

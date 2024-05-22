@@ -1,0 +1,16 @@
+# Programa para contar el número de veces que una letra aparece en una frase ingresada por el usuario
+
+# Solicitar al usuario una frase y una letra
+frase = input("Ingrese una frase: ")
+letra = input("Ingrese una letra: ")
+
+# Inicializar el contador de apariciones de la letra
+contador = 0
+
+# Contar el número de veces que la letra aparece en la frase
+for caracter in frase:
+    if caracter == letra:
+        contador += 1
+
+# Mostrar el resultado al usuario
+print(f"La letra '{letra}' aparece {contador} veces en la frase.")

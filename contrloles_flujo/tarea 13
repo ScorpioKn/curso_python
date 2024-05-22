@@ -1,0 +1,33 @@
+# Calculadora interactiva que realiza operaciones según la elección del usuario
+
+# Inicializar la calculadora
+encendida = True
+
+while encendida:
+    # Solicitar al usuario los datos A, B y la operación a realizar
+    A = float(input("Ingrese el valor de A: "))
+    B = float(input("Ingrese el valor de B: "))
+    operacion = int(input("Elija la operación a realizar (1: raíz cuadrada de la suma, 2: división, 3: fórmula especial): "))
+
+    # Realizar la operación seleccionada
+    if operacion == 1:
+        resultado = (A + B) ** 0.5
+    elif operacion == 2:
+        if B != 0:
+            resultado = A / B
+        else:
+            print("Error: No se puede dividir por 0.")
+            continue
+    elif operacion == 3:
+        resultado = (A * B) / 2.5
+    else:
+        print("Operación no válida.")
+        continue
+
+    # Mostrar el resultado de la operación
+    print("El resultado de la operación es:", resultado)
+
+    # Preguntar al usuario si desea apagar la calculadora
+    apagar = input("¿Desea apagar la calculadora? (Escriba 'SAL' para salir): ")
+    if apagar == "SAL":
+        encendida = False

@@ -1,0 +1,16 @@
+# Programa para generar la sucesión de Fibonacci
+
+# Inicializar los dos primeros números de la sucesión
+num1 = 0
+num2 = 1
+
+# Mostrar los dos primeros números
+print(num1)
+print(num2)
+
+# Generar el resto de la sucesión
+for _ in range(10):  # Generar 10 números adicionales
+    siguiente_num = num1 + num2
+    print(siguiente_num)
+    num1 = num2
+    num2 = siguiente_num

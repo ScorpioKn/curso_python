@@ -1,0 +1,47 @@
+# Programa para gestionar una lista de tareas pendientes
+
+# Inicializar la lista de tareas pendientes
+tareas_pendientes = []
+
+# Función para mostrar el menú de opciones
+def mostrar_menu():
+    print("\nMenú de opciones:")
+    print("1. Agregar tarea")
+    print("2. Marcar tarea como completada")
+    print("3. Mostrar tareas")
+    print("4. Salir")
+
+# Ciclo interactivo para gestionar las tareas
+while True:
+    mostrar_menu()
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+        nueva_tarea = input("Ingrese la nueva tarea: ")
+        tareas_pendientes.append(nueva_tarea)
+        print("Tarea agregada correctamente.")
+    elif opcion == "2":
+        if tareas_pendientes:
+            print("Tareas pendientes:")
+            for i, tarea in enumerate(tareas_pendientes):
+                print(f"{i + 1}. {tarea}")
+            tarea_completada = int(input("Ingrese el número de la tarea completada: "))
+            if 1 <= tarea_completada <= len(tareas_pendientes):
+                del tareas_pendientes[tarea_completada - 1]
+                print("Tarea marcada como completada.")
+            else:
+                print("Número de tarea inválido.")
+        else:
+            print("No hay tareas pendientes para marcar como completadas.")
+    elif opcion == "3":
+        if tareas_pendientes:
+            print("Tareas pendientes:")
+            for i, tarea in enumerate(tareas_pendientes):
+                print(f"{i + 1}. {tarea}")
+        else:
+            print("No hay tareas pendientes.")
+    elif opcion == "4":
+        print("Saliendo del programa...")
+        break
+    else:
+        print("Opción no válida. Por favor, seleccione una opción válida.")
