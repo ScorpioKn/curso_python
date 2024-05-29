@@ -6,7 +6,7 @@ horarios_seleccionada=input("selecione un horario de la lista: ")
 reserva_lista=True
 if reserva_lista:
     print("reserva realizada con exito.")
-    costo_alquiler=10
+    costo_alquiler=50
     pago_realizado= True
     if pago_realizado:
         print("pago del alquiler realizado.")
