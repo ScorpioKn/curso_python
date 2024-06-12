@@ -87,5 +87,78 @@ para utilizarlo basta con realizar una asignacion de cada argumento en la propia
 def build_cpu(familia,num_core,frecuencia):
     print(f"""
     la cpu es de la familia {familia}, con {num_core}, cores y con una frecuencia {frecuencia} """)
-    build_cpu(num_core)
+    build_cpu(num_core=4,familia="intel",frecuencia=2.7)
+```
+### argumentos posicionales
+los argumentos son copiados en un orden especifico, en este caso debemos conocer o recordar cual es el orden de los parametros.
+**ejemplo**
+```python
+def build_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia {familia}, con {num_core}, cores y con una frecuencia {frecuencia} 
+    """)
+#haciendo uso de argumentos posicionales
+build_cpu("intel",4,2.7)
+```
+### parametros por defecto
+es posible especificar **valores por defecto** en los parametros de una funcion, en el caso de que no se proporcione un valor al argumento en la llamada a la funcion, el parametro correspondiente tomara el valor definido por defecto.
+**ejemplo**
+```python
+def alumnos(nom,app,estado="aprobado"):
+
+alumnos("ruth","castillo")
+alumnos("anthony","cruces","desaprobados")
+```
+## desempaquetado/empaquetado de argumentos/posicionales nominales
+son técnicas en Python que permiten trabajar con un número variable de argumentos en funciones.
+
+- Empaquetar argumentos posicionales: 
+**ejemplo**
+ 
+```python
+def sumar(*numeros):
+    total = sum(numeros)
+    return total
+
+resultado = sumar(1, 2, 3, 4)
+```
+ 
+ 
+- Empaquetar argumentos nominales
+
+**ejemplo** 
+ 
+ ```python
+def mostrar_info(**datos):
+    for clave, valor in datos.items():
+        print(f"{clave}: {valor}")
+
+mostrar_info(nombre="María", edad=30, ciudad="Lima")
+```
+ 
+
+ 
+ 
+- Desempaquetar argumentos nominales: 
+Ejemplo:
+ 
+```python
+info = {"nombre": "Juan", "edad": 25}
+mostrar_info(info)
+```
+
+## funciones internas de python(tarea)
+En Python, las funciones internas (también conocidas como funciones anidadas) son funciones definidas dentro de otra función. Estas funciones internas pueden acceder a las variables locales de la función externa en la que están definidas. Aquí te muestro un ejemplo de cómo definir y utilizar funciones internas en Python:
+**ejemplo**
+```python
+def calcular_cuadrado(numero):
+    def cuadrado(num):
+        return num ** 2
+    
+    resultado = cuadrado(numero)
+    return resultado
+
+numero = 5
+resultado_cuadrado = calcular_cuadrado(numero)
+print(f"El cuadrado de {numero} es: {resultado_cuadrado}")
 ```

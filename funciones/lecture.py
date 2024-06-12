@@ -34,3 +34,17 @@ def min(l):
             minimo=n
         return minimo
 print(min(lista))
+
+#crear una funcion que reciba como parametro el nombre y la edad de una persona mi funcion debera retornar un diccionario con los datos, luego mostrar por terminal el valor de retorno de mi funcion.
+nombre=input("ingrese su nombre delincuente")
+edad=int(input("ingrese su edad"))
+def persona(nom,edad):
+    # return {
+    #       "nombre":nom,
+    #       "edad":edad
+    #  }
+    return dict(
+        nombre=nom
+        edad=edad
+    )
+print(persona(nombre,edad))
