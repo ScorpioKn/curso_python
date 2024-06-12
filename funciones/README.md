@@ -61,3 +61,31 @@ def dicc():
     return("nombre","jose","edad":45)
 dicc()
 #retona ("nombre","jose","edad":45)
+```
+## parametros y argumentos
+si una funcion no dispuciera de valores de entrada estaria limitada en su actuacion.
+es por ello que los `parametros` nos permiten variar los datos que consumen una funcion para obtener distintos resultados
+**ejemplo**
+*crear una funcion que recibe un valor numerico y devuelve su raiz cuadrada*
+```python
+def sqrt(valor):
+    return valor**(1/2)
+# NOTA: en este caso, el valor 4 es un argumento de la funcion
+sqrt(4)
+```
+cuando llamamos a una funcion con `argumentos`, los valores de estos argumentos se copian en los correspondientes `parametros` dentro de la funcion.
+```python
+def ejm(a,b,c):
+    return a+b+c
+ejm(4,5,6)
+```
+### argumentos nominales
+en esta aproximacion los argumentos no son copiados en un orden especifico si no que **se asignan por nombre a cada párametro** ello nos permite evitar el problema de conocer o recordar cual es el orden de los parametros de la funcion. 
+para utilizarlo basta con realizar una asignacion de cada argumento en la propia llamada a la funcion.
+**ejemplo**
+```python
+def build_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia {familia}, con {num_core}, cores y con una frecuencia {frecuencia} """)
+    build_cpu(num_core)
+```
