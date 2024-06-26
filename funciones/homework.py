@@ -44,3 +44,8 @@ Valores=[4,7,8,5,2,]
 print(Min(valores))
 print(Max(valores))
 print(Sum(valores))
+
+#crear una lista de alumnos con los siguientes campos
+# nombre,apellido,edad,celular,email
+# 1. actualizar los registros con un campo mas todos tendran el campo de programa de estudio de enfermeria
+# 2.buscar el segundo registro u actualizar si edad a 50 años.

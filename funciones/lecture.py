@@ -104,9 +104,38 @@ lista_alumnos=[
         "edad":50,
         "semestre":2
     }
+    de
 ]
-
-alimnos_actualizados=list(map(lambda el:el["semestre"]+1,lista_alumnos))
+def objeto(e):
+    if"semestre" in e:
+        e[semestre"]=e["semestre"]+1
+    return [ 
+        e 
+    ]
+alimnos_actualizados=list(map(,lista_alumnos))
 print(alumnos_actualizado)[1]
 
 # filter
+# devlover los numeros pares de una lista
+lista=[4,8,2,5,7,10,6,5,3,20]
+nueva_lista=list(filter(lambda x:x%2==0,lista))
+print(nueva_lista)
+{
+        "nombre":"abel"
+        "edad":36,
+        "semestre":2
+    },
+    {
+        "nombre":"anthony",
+        "edad":40
+        "semestre":2
+    },
+    {
+        "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+]
+
+lista_filtrada=list(filter(lambda x:x["edad"]<50,lista_alumnos))
+print(list_filtrada)
