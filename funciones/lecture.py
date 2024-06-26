@@ -138,4 +138,4 @@ print(nueva_lista)
 ]
 
 lista_filtrada=list(filter(lambda x:x["edad"]<50,lista_alumnos))
-print(list_filtrada)
+print(list_filtrada) 
