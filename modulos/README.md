@@ -23,13 +23,12 @@ def suma(a, b):
 def resta(a, b):
     return a - b
  
- 
+```
 Uso de un Módulo:
  
 Para utilizar las funciones definidas en el módulo  operaciones.py , podemos importarlo en otro archivo de la siguiente manera:
  
-python
- Copiar
+```python
 import operaciones
 
 resultado_suma = operaciones.suma(5, 3)
@@ -48,7 +47,7 @@ Ejemplo de Paquete:
 Supongamos que tenemos un directorio llamado  matematicas  que contiene los módulos  operaciones.py  y  estadisticas.py , junto con un archivo especial  _init_.py  que indica que es un paquete.
  
 
- Copiar
+
 matematicas/
     _init_.py
     operaciones.py
@@ -60,7 +59,7 @@ Uso de un Paquete:
 Para importar un módulo de un paquete en Python, se utiliza la siguiente sintaxis:
  
 python
- Copiar
+
 from matematicas import operaciones
 
 resultado_resta = operaciones.resta(8, 3)
