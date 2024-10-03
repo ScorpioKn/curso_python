@@ -18,10 +18,7 @@
 #         print("estoy viendo el get status actual de mi cuenta")
 # mario=banco("mario","ramos lopez",7455125,787998,1220)
 # print(mario.deposito())
-#Ejercicio 02 I 
-# #Crear una clase agencia 
-# #con sus atributos nombre y apellidos del pasajero dni numero de asiento fecha de viaje 
-# #sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje
+
 class agencia:
     #atributos
     def _init_(self,nombre,apellidos,dni,numero_asiento,fecha_viaje):
@@ -32,13 +29,15 @@ class agencia:
         self.fecha_viaje=fecha_viaje
     #metodos
     def ingresar_origen(self,lugar):
-        print("estoy ingresando de donde viajo:",lugar)
+        print("estoy ingresando a mi destino:",lugar)
     def ingresar_destino(self):
-        print("estoy ingresando de donde voy")
+        print("estoy ingresando mi retorno")
     def cancelar_viaje(self):
-        print("estoy cancelando mi viaje ")
+        print("estoy cancelando mi transporte ")
     def ver_estado_pasaje(self):
-        print("estoy viendo el estado de mi pasaje")
-mario=agencia("mario","ramos lopez",7446489,122,2025/1/22)
-print(mario.ingresar_destino())
-mario.ingresar_origen("puquio")
+        print("estoy viendo el control de mi pasaje")
+esteban=agencia("esteban","garriazo ramos",74124556,122,"2024-1-22")
+print(esteban.ingresar_destino())
+esteban.ingresar_origen("puquio")       
+esteban=agencia("esteban","garriazo ramos"74124556,122"2024-1-22")
+print(malu)                       
