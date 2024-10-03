@@ -33,3 +33,11 @@ cliente_miguel.remove_cash(80)
 print(cliente_miguel.status_acount())
 cliente_miguel.remove_cash(80)
 print(cliente_miguel.status_acount())
+
+
+
+
+
+
+
+
